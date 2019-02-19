@@ -1,0 +1,158 @@
+* {
+  font-family: 'Open Sans', sans-serif;
+  box-sizing: border-box;
+}
+body{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas:
+  "sidebar search-nav search-nav search-nav"
+  "sidebar header header header"
+  "sidebar header header header"
+  "sidebar navbar navbar navbar"
+  "sidebar graph graph graph"
+  "sidebar graph graph graph"
+  "sidebar graph graph graph"
+  "sidebar tables tables links"
+  "sidebar tables tables links"
+  "sidebar tables tables links"
+  "sidebar tables tables links"
+  "sidebar tables tables links";
+}
+
+aside {
+  background-color: #2a384c;
+  color: #9298a0;
+  text-align: center;
+  grid-area: sidebar; 
+}
+
+aside img{
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
+}
+
+header{
+  background-color: #FFF;
+  display: flex;
+  justify-content: space-between;
+  grid-area: header;
+}
+
+h1{
+  margin-bottom: 10px;
+}
+
+.search-nav{
+  background-color: pink;
+  display: flex;
+  height: 60px;
+  grid-area: search-nav;
+}
+
+.search-nav ul{
+  list-style-type: none;
+  display: flex;
+  margin: 0px;
+  padding: 0px;
+}
+
+.search-nav li img{
+  width: 52px;
+}
+
+.search-nav input{
+  width: 70%;
+}
+
+header p{
+  display: inline-block;
+  margin-top: 0px;
+}
+.preview-text{
+  color: blue;
+  padding-left: 20px;
+}
+
+.header-btn{
+  /*width: 1%;*/
+}
+
+.btn2{
+  background-image: url('images/bookmark.svg');
+  background-repeat: no-repeat;
+}
+
+.btn3{
+  background-image: url('images/pen.svg');
+  background-repeat: no-repeat;
+}
+
+.btn4{
+  background-image: url('images/trash.svg');
+  background-repeat: no-repeat;
+}
+
+.navbar{
+  background-color: #FFF;
+  display: flex;
+  justify-content: flex-start;
+  color: inherit;
+  margin: 25px 0px;
+  grid-area: navbar;
+}
+
+.navbar button{
+  border: none;
+  background: none;
+  margin-bottom: 15px;
+  color: grey;
+}
+
+.graph-section{
+  background-color: #c7cdd6;
+  display: flex;
+  justify-content: space-between;
+  height: 150px;
+  grid-area: graph;
+}
+
+.graph-section img{
+  width: 50%;
+}
+
+.table-section{
+  background-color: #c7cdd6;
+  padding: 50px 20px;
+  grid-area: tables
+}
+
+.table-section table{
+  background-color: #FFF;
+  padding: 20px;
+  height: 573px;
+}
+
+.table-section table th{
+  background-color: grey;
+  color: white;
+}
+
+.link-section{
+  padding-top: 53px;
+  background-color: #c7cdd6;
+  display: flex;
+  flex-direction: column;
+  grid-area: links;
+}
+
+.link-section button{
+  width: 80%;
+  height: 40px;
+  margin-bottom: 20px;
+}
+
+.link-section p{
+  font-size: 12px;
+}
